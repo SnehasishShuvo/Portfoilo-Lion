@@ -1,0 +1,254 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(/Assets/fonts/Roboto/Roboto-VariableFont.woff2);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: mysecondFont;
+    src: url(/Assets/fonts/Playwrite_AU_SA/PlaywriteAUSA-VariableFont_wght.ttf);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #542e7e, #2575fc);
+    color: white;
+   
+}
+#background-video {
+   
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 30%;
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+      
+      
+}
+
+.hero {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 100px 0;
+    text-align: center;
+    border-radius: 15px;
+    font-family: myFirstFont;
+}
+
+.card {
+    margin-bottom: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    transition: transform 0.3s ease;
+    height: 100%;
+}
+
+.card:hover {
+    transform: scale(1.025);
+}
+
+
+
+.profile-pic {
+    width: 300px;
+    height: 300px;
+    border-radius: 60%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    filter: brightness(100%);
+}
+
+.navbar {
+    background: rgba(0, 0, 0, 0.4); /* Transparent black */
+    backdrop-filter: blur(10px); /* Glass effect */
+    transition: background 0.3s ease-in-out;
+    padding: 15px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.navbar-brand {
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+}
+
+.navbar-nav .nav-link {
+    color: white !important;
+    font-size: 18px;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #00ff2a !important;
+}
+
+
+.navbar.scrolled {
+    background: rgba(0, 0, 0, 0.8); 
+}
+
+
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .navbar-nav a {
+        padding: 10px;
+        display: block;
+    }
+}
+
+
+.about p {
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+.card {
+    color: #f8f9fa;}
+
+.card-img-top { /* Style project images */
+    max-height: 200px; /* Set a maximum height */
+    object-fit: cover; /* Cover the area, may crop */
+    width: 100%;
+}
+
+
+.card-text {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 200;
+    text-align: justify;
+    word-spacing: 1px;
+}
+
+#navbarNav {
+    color: rgb(38, 155, 38);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Media query for smaller screens (example) */
+@media (max-width: 768px) {
+    .profile-pic {
+        width: 200px;
+        height: 200px;
+    }
+
+    .hero {
+        padding: 50px 0;
+    }
+}
+.contact {
+    background: rgba(255, 255, 255, 0.1); /* Glass effect */
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    max-width: 600px;
+    margin: auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    
+    transition: transform 0.3s ease-in-out;
+}
+
+.contact:hover {
+    transform: scale(1.02);
+}
+
+.contact h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+/* Contact Details */
+.contact p {
+    font-size: 16px;
+    color: #ddd;
+    margin-bottom: 10px;
+}
+
+/* Input Fields */
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    outline: none;
+}
+
+.contact-form textarea {
+    height: 120px;
+    resize: none;
+}
+
+/* Submit Button */
+.contact-form button {
+    background: #07ff77;
+    color: black;
+    font-size: 18px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.contact-form button:hover {
+    background: #e74809;
+}
+
+/* Social Media Icons */
+.social-links {
+    margin-top: 20px;
+    
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 0 10px;
+    color: white;
+    font-size: 24px;
+    transition: transform 0.3s ease-in-out, color 0.3s;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    transform: scale(1.2);
+    color: #00ff6a;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .contact {
+        width: 90%;
+        padding: 30px;
+    }
+}
