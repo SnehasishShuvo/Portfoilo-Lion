@@ -16,6 +16,10 @@ body {
     color: white;
    
 }
+.py-5 {
+    padding-top: 6rem !important;
+    padding-bottom: 3rem !important;
+}
 #background-video {
    
     top: 0;
