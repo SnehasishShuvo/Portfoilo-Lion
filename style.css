@@ -361,7 +361,6 @@ body {
     transform: scale(1.2) rotate(5deg);
 }
 
-/* Input Fields */
 .contact-form input,
 .contact-form textarea {
     width: 100%;
@@ -380,7 +379,6 @@ body {
     resize: none;
 }
 
-/* Submit Button */
 .contact-form button {
     background: #07ff77;
     color: black;
@@ -579,7 +577,6 @@ body {
     }
 }
 
-/* Animation Styles */
 @keyframes float {
     0% {
         transform: translateY(0px);
@@ -604,7 +601,6 @@ body {
     }
 }
 
-/* Animate text gradient */
 @keyframes gradient {
     0% {
         background-position: 0% 50%;
@@ -626,7 +622,6 @@ body {
     animation: gradient 3s linear infinite;
 }
 
-/* Add smooth transition to all elements */
 * {
     transition: all 0.3s ease;
 }
@@ -695,7 +690,6 @@ body {
     }
 }
 
-/* Projects Section */
 #projects {
     background: rgba(0, 0, 0, 0.4);
     border-radius: 15px;
@@ -873,7 +867,6 @@ body {
     }
 }
 
-/* Hero Section Styles */
 .hero-section {
     min-height: 100vh;
     display: flex;
@@ -1014,7 +1007,7 @@ body {
     }
 }
 
-/* Responsive Styles */
+
 @media (max-width: 768px) {
     .hero-title {
         font-size: 3rem;
